@@ -1,0 +1,969 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test PageLayout renders without crashing 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "tvqnl4",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "tvqnl4",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <PageLayout
+        isBurgerMenuOpen={true}
+        isLightMode={true}
+      >
+        <div
+          className="container"
+        >
+          <AppContent>
+            <withRouter(Routes)>
+              <Routes
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "tvqnl4",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "tvqnl4",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "tvqnl4",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+              >
+                <Switch>
+                  <Route
+                    component={[Function]}
+                    computedMatch={
+                      Object {
+                        "isExact": true,
+                        "params": Object {},
+                        "path": "/",
+                        "url": "/",
+                      }
+                    }
+                    exact={true}
+                    key="/"
+                    location={
+                      Object {
+                        "hash": "",
+                        "key": "tvqnl4",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      }
+                    }
+                    path="/"
+                  >
+                    <ColorsBoard
+                      history={
+                        Object {
+                          "action": "POP",
+                          "block": [Function],
+                          "canGo": [Function],
+                          "createHref": [Function],
+                          "entries": Array [
+                            Object {
+                              "hash": "",
+                              "key": "tvqnl4",
+                              "pathname": "/",
+                              "search": "",
+                              "state": undefined,
+                            },
+                          ],
+                          "go": [Function],
+                          "goBack": [Function],
+                          "goForward": [Function],
+                          "index": 0,
+                          "length": 1,
+                          "listen": [Function],
+                          "location": Object {
+                            "hash": "",
+                            "key": "tvqnl4",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          },
+                          "push": [Function],
+                          "replace": [Function],
+                        }
+                      }
+                      location={
+                        Object {
+                          "hash": "",
+                          "key": "tvqnl4",
+                          "pathname": "/",
+                          "search": "",
+                          "state": undefined,
+                        }
+                      }
+                      match={
+                        Object {
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
+                    >
+                      <div
+                        className="dragContainer"
+                      >
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#B4325B",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#1C9C0B",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#36FB68",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#67DABF",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#4CF743",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#8867A9",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#1246A3",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#FDFCAF",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#F4E9B2",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#280D5A",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#83810C",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#512801",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#50A5BD",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#BB752C",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#29E9E4",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#760D0F",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#DE2978",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#B07374",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#FADCC0",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#CC225B",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#6CBC7B",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#DE84E6",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#AEC6B9",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#1390A8",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#177434",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#752080",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#22C267",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#2A5D90",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#917DC1",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#DEA8D8",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#8FECCC",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#0EAFA2",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#EA5D7C",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#0C52EF",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#67CD13",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#31FD4B",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#5FB329",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#16736E",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#D8AF5D",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#D6F73E",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#E0C38F",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#F8ABC8",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#DADA68",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#80A092",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#4D7E30",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#CE9E9C",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#221D6F",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#7A9951",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#3329C7",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#4DDD46",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#4F45B3",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#46BA89",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#ECD0E4",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#04C6F3",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#D6E747",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#B6C7BF",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#48ABDD",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#424F02",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#A669F9",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#060884",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#188157",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#EC88BA",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#EFA695",
+                            }
+                          }
+                        />
+                        <div
+                          className="itemboxColor"
+                          draggable={true}
+                          onDragOver={[Function]}
+                          onDragStart={[Function]}
+                          onDrop={[Function]}
+                          style={
+                            Object {
+                              "backgroundColor": "#20F007",
+                            }
+                          }
+                        />
+                      </div>
+                    </ColorsBoard>
+                  </Route>
+                </Switch>
+              </Routes>
+            </withRouter(Routes)>
+          </AppContent>
+        </div>
+      </PageLayout>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

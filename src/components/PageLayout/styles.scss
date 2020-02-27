@@ -1,0 +1,19 @@
+@import '../../../assets/styles/responsive.scss';
+
+.container {
+  min-height: 800px;
+  text-align: center;
+  padding: 150px 120px 0 120px;
+
+  // @include Responsive(SM) {
+  //   background-position: 70% 50%;
+  // }
+  
+  // @include Responsive(XS) {
+  //   background-position: 70% 50%;
+  // }
+  
+  // @include Responsive(XXS) {
+  //   background-position: 70% 50%;
+	// }
+}
