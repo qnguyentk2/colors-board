@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable no-debugger */
 /* eslint-disable no-param-reassign */
 import React, { Component } from 'react';
@@ -19,6 +20,16 @@ const swapArrayElements = (arr, indexA, indexB) => {
   arr[indexB] = temp;
   return arr;
 };
+
+const swapItemArrayInObject = (obj, pointA, pointB, key) => {
+  const itemA = `${key}${pointA.orderRow}`;
+  const itemB = `${key}${pointB.orderRow}`;
+  const temp = obj[itemA][pointA.orderCol];
+  obj[itemA][pointA.orderCol] = obj[itemB][pointB.orderCol];
+  obj[itemB][pointB.orderCol] = temp;
+
+  return obj;
+}
 
 class ColorsBoard extends Component {
   constructor(props) {
@@ -45,7 +56,7 @@ class ColorsBoard extends Component {
     this.state = {
       pieces2,
       dragOrder: {},
-      drowOrder: {},
+      dropOrder: {},
     };
   }
 
@@ -53,29 +64,29 @@ class ColorsBoard extends Component {
     e.preventDefault();
   }
 
-  handleDragStart = (e, orderCol, orderRow) => {
+  handleDragStart = (e, idxCol, idxRow) => {
     const { dragOrder } = this.state;
     this.setState({
       dragOrder: {
         ...dragOrder,
-        orderCol,
-        orderRow,
+        orderCol: idxCol,
+        orderRow: idxRow,
       }
     })
   }
 
-  handleDrop = (e, orderCol, orderRow) => {
-    const { drowOrder } = this.state;
+  handleDrop = (e, idxCol, idxRow) => {
+    const { dropOrder } = this.state;
     this.setState({
-      drowOrder: {
-        ...drowOrder,
-        orderCol,
-        orderRow,
+      dropOrder: {
+        ...dropOrder,
+        orderCol: idxCol,
+        orderRow: idxRow,
       }
     }, () => {
       const { dragOrder, pieces2 } = this.state;
-      if (drowOrder.orderRow === dragOrder.orderRow) { 
-        const newRowArray = swapArrayElements(pieces2[`item${dragOrder.orderRow}`], dragOrder.orderCol, drowOrder.orderCol);
+      if (idxRow === dragOrder.orderRow) { 
+        const newRowArray = swapArrayElements(pieces2[`item${dragOrder.orderRow}`], dragOrder.orderCol, idxCol);
         // reset state
         this.setState({
           pieces2: {
@@ -83,7 +94,17 @@ class ColorsBoard extends Component {
             [`item${dragOrder.orderRow}`]: [...newRowArray]
           },
           dragOrder: {},
-          drowOrder: {},
+          dropOrder: {},
+        })
+      } else {
+        const newPieces2 = swapItemArrayInObject(pieces2, dragOrder, this.state.dropOrder, 'item');
+        this.setState({
+          pieces2: {
+            ...pieces2,
+            ...newPieces2,
+          },
+          dragOrder: {},
+          dropOrder: {},
         })
       }
     })
@@ -97,16 +118,16 @@ class ColorsBoard extends Component {
       <div className={styles.dragContainer}>
         {
           Object.keys(pieces2).map((item, index) => {
-            return pieces2[item].map(i => (
+            return pieces2[item].map((i, idx) => (
               <div 
                 draggable
-                onDragStart={(e) => this.handleDragStart(e, i.order, index)}
+                onDragStart={(e) => this.handleDragStart(e, idx, index)}
                 onDragOver={this.handleDragOver}
-                onDrop={(e) => this.handleDrop(e, i.order, index)}
+                onDrop={(e) => this.handleDrop(e, idx, index)}
                 className={styles.itemboxColor} 
                 style={{ backgroundColor: `${i.color}`}}
               >
-                {/* test {index} */}
+                {index}, {idx}
               </div>
             ));
           })
