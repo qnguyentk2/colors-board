@@ -2,10 +2,7 @@
 /* eslint-disable no-debugger */
 /* eslint-disable no-param-reassign */
 import React, { Component } from 'react';
-
 import styles from './ColorsBoard.scss';
-
-const mainHues = [0, 30, 61, 89, 117, 150, 180, 210];
 
 export const getRandomColor = (hue, lightness) => {
   const color = `hsl(${hue}, 100%, ${lightness}%)`;
@@ -29,9 +26,9 @@ export const swapItemArrayInObject = (obj = {}, pointA = {}, pointB = {}, key) =
   return obj;
 }
 
-const randomColorRow = (lightness) => {
+const randomColorRow = (hue) => {
   return [...Array(8)].map((_, i) => ({
-    color: getRandomColor(mainHues[i], lightness),
+    color: getRandomColor(hue, 90-i*10),
     order: i,
     board: 'shuffled'
   }))
@@ -42,14 +39,14 @@ class ColorsBoard extends Component {
     super(props);
 
     const pieces2 = {
-      item0: randomColorRow(90),
-      item1: randomColorRow(80),
-      item2: randomColorRow(70),
-      item3: randomColorRow(60),
-      item4: randomColorRow(50),
-      item5: randomColorRow(40),
-      item6: randomColorRow(30),
-      item7: randomColorRow(20)
+      item0: randomColorRow(0),
+      item1: randomColorRow(30),
+      item2: randomColorRow(61),
+      item3: randomColorRow(89),
+      item4: randomColorRow(117),
+      item5: randomColorRow(150),
+      item6: randomColorRow(180),
+      item7: randomColorRow(210)
     }
 
     this.state = {
@@ -116,20 +113,23 @@ class ColorsBoard extends Component {
       <div className={styles.dragContainer}>
         {
           Object.keys(pieces2).map((item, index) => {
-            return pieces2[item].map((i, idx) => (
-              <div
-                // id={`drag_${index}`}
-                key={`${item}-${i.color}`}
-                draggable
-                onDragStart={(e) => this.handleDragStart(e, idx, index)}
-                onDragOver={this.handleDragOver}
-                onDrop={(e) => this.handleDrop(e, idx, index)}
-                className={styles.itemboxColor} 
-                style={{ backgroundColor: `${i.color}`}}
-              >
-                {/* {index}, {idx} */}
+            return (
+              <div className={styles.lineboxColor}>
+                {
+                  pieces2[item].map((i, idx) => (
+                    <div
+                      key={`${item}-${i.color}`}
+                      draggable
+                      onDragStart={(e) => this.handleDragStart(e, idx, index)}
+                      onDragOver={this.handleDragOver}
+                      onDrop={(e) => this.handleDrop(e, idx, index)}
+                      className={styles.itemboxColor} 
+                      style={{ backgroundColor: `${i.color}`}}
+                    />
+                  ))
+                }
               </div>
-            ));
+            );
           })
         }
       </div>

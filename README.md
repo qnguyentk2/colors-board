@@ -1,11 +1,11 @@
-# Autocomplete Example
+# colors-board app
 
-This is an example about an Autocomplete component
-
+This is an example about an drag and drop app 
+A drag and drop colors board
 
 ## Authors
 
-* **Quynh Nguyen** - *Initial work* - [GitLab](https://gitlab.com/quynhnguyentk2/react-js-assignment)
+* **Quynh Nguyen** - *Initial work* - [Github](https://github.com/qnguyentk2/colors-board)
 
 
 ## Getting Started
@@ -66,7 +66,8 @@ With yarn:
 
 ## Deployment
 
-No
+Heroku Live Demo: https://colors-board.herokuapp.com/
+Source Code: https://github.com/qnguyentk2/colors-board
 
 ## Built With
 
